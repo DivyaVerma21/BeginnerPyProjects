@@ -1,0 +1,152 @@
+What is a Tuple?
+A tuple is a collection of items that is ordered and immutable. Unlike lists, which are mutable and can be changed, tuples cannot be altered once they are created. They are defined using parentheses ().
+
+Creating Tuples
+How would you create a tuple that contains the following items: 5, 3.14, "hello", and True?
+tuple=('5','3.14','hello','True')
+
+Accessing Elements
+Given the tuple my_tuple = (10, 20, 30, 40, 50), what value is at index 2?
+my_tuple = (10, 20, 30, 40, 50)
+print(my_tuple[2]) 
+
+Slicing Tuples
+If you have the tuple my_tuple = ('a', 'b', 'c', 'd'), what will be the result of my_tuple[1:3]?
+my_tuple = ('a', 'b', 'c', 'd')
+print(my_tuple[1:3])
+#Output (b,c)
+
+Tuple Immutability
+Can you change the value of an element in the tuple my_tuple = (1, 2, 3) after it has been created? 
+No
+
+Tuple Methods
+Using the tuple my_tuple = (1, 2, 2, 3, 4), how would you find out how many times the value 2 appears in it?
+my_tuple = (1, 2, 2, 3, 4)
+print(my_tuple.count(2))
+
+Creating Tuples with Different Data Types
+Create a tuple containing an integer, a string, a list, and a tuple. For example, (42, 'Python', [1, 2, 3], (4, 5)).
+my_tuple=(42, 'Python', [1, 2, 3], (4, 5))
+print(my_tuple)
+
+Accessing Nested Tuples
+Given the nested tuple my_tuple = ((1, 2), (3, 4), (5, 6)), what value is at index 1 of the tuple at index 0?
+my_tuple=((1, 2), (3, 4), (5, 6))
+print(mytuple[0][1])
+
+Concatenating Tuples
+How would you concatenate the tuples tuple1 = (1, 2, 3) and tuple2 = (4, 5, 6) to create a new tuple?
+tuple1=(1,2,3)
+tuple2=(4,5,6)
+combined_tuple = tuple1 + tuple2
+print(combined_tuple)
+
+Repeating Tuples
+If you have the tuple my_tuple = ('a', 'b'), how would you create a new tuple that repeats my_tuple three times?
+my_tuple=('a', 'b')
+repeated_tuple = my_tuple * 3
+print(repeated_tuple)
+
+Finding Index of Value
+Given the tuple my_tuple = (10, 20, 30, 40, 50), how would you find the index of the value 40?
+my_tuple = (10, 20, 30, 40, 50)
+print(my_tuple.index(40))
+
+
+Swapping Values in Tuples
+You have two tuples, tuple1 = (1, 2, 3) and tuple2 = (4, 5, 6). How would you swap the values of tuple1 and tuple2 without using an intermediate variable?
+tuple1 = (1, 2, 3)
+tuple2 = (4, 5, 6)
+tuple1, tuple2 = tuple2, tuple1
+print(tuple1)  # Output: (4, 5, 6)
+print(tuple2) 
+
+Tuple Length
+What is the length of the tuple my_tuple = (1, 'a', 3.14, [1, 2], (5, 6))?
+my_tuple = (1, 'a', 3.14, [1, 2], (5, 6))
+print(len(my_tuple))
+
+Nested Tuples
+Given the tuple nested_tuple = ((10, 20), (30, (40, 50))), what is the value of nested_tuple[1][1][0]?
+nested_tuple = ((10, 20), (30, (40, 50)))
+print(nested_tuple[1][1][0]) #Output40
+
+
+Tuple Concatenation and Repetition
+If you have the tuple t = (1, 2, 3), how would you create a new tuple that is a combination of t followed by itself twice more (i.e., t repeated three times)?
+t = (1, 2, 3)
+new_tuple=t*3
+print(new_tuple)
+
+Finding the Minimum and Maximum Values
+Given the tuple numbers = (5, 3, 9, 1, 7), how would you find the minimum and maximum values in the tuple?
+my_tuple=(5, 3, 9, 1, 7)
+print(min(my_tuple))
+print(max(my_tuple))
+
+
+Tuple with Mixed Data Types
+Create a tuple that contains a string, an integer, a list, and another tuple. Then, access and print the second element of the list inside the tuple.
+
+my_tuple=('divya',38,['d','i','v','y','a'],(3,8))
+print(my_tuple[2][1])
+
+
+Tuple Comparison
+Compare the tuples tuple1 = (1, 2, 3) and tuple2 = (1, 2, 3). What will be the result of tuple1 == tuple2 and why?
+tuple1 = (1, 2, 3)
+tuple2 = (1, 2, 3)
+if(tuple1==tuple2):
+	print('TRue')
+else:
+	print('false')
+
+
+Element Count in Tuples
+Given the tuple repeated = (3, 3, 2, 1, 3, 2, 3), how would you count the number of times 3 appears?
+my_tuple=(3, 3, 2, 1, 3, 2, 3)
+print(my_tuple.count(3))
+
+
+Tuple Indexing and Slicing
+For the tuple my_tuple = ('a', 'b', 'c', 'd', 'e'), what is the result of my_tuple[-4:-1]?
+my_tuple = ('a', 'b', 'c', 'd', 'e')
+print(my_tuple[-4:-1]) #output ('b', 'c', 'd')
+
+
+
+Tuple Unpacking
+Given the tuple person = ('John', 'Doe', 30), unpack this tuple into three variables: first_name, last_name, and age. Then, print these variables.
+person = ('John', 'Doe', 30)
+tuple_firstname=(person[0])
+print(tuple_firstname)
+tuple_lastname=(person[1])
+print(tuple_lastname)
+print(person[2])
+
+
+OR
+first_name, last_name, age = person
+print(first_name)
+print(last_name)
+print(age)
+
+
+Tuple Immutability
+If you have a tuple t = (1, [2, 3], 4), and you modify the list within the tuple (e.g., t[1].append(5)), what happens to the tuple?
+t = (1, [2, 3], 4)
+t[1].append(5)
+print(t)
+
+t=(1,[2,3,5],4)
+
+
+
+
+
+
+
+
+
+
