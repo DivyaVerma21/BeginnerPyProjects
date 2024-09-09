@@ -1,0 +1,210 @@
+1.Print natural nos.
+n=int(input('Enter a no.'))
+for i in range(1,n+1,1):
+    print(i)
+i+=1
+print()
+
+2.Print Reverese no.s
+
+n=int(input('Enter a no.'))
+for i in range(n,0,-1):
+    print(i)
+print()
+
+3. Print alphabets a to z
+for i in range(ord('a'),ord('z')+1,1):
+    print(chr(i))
+    i+=1
+print()
+
+4. Print even nos.
+
+for i in range(0,101,2):
+    print(i)
+print()
+
+5. Print odd nos.
+i=1
+for i in range(1,100,2):
+    print(i)
+print()
+
+6. Sum of natural nos.
+sum = 0
+for i in range(1, 101):
+    sum += i
+print(sum)
+
+7. Sum of even nos.
+sum=0
+for i in range(0,101,2):
+    sum=sum+i
+print(sum)
+
+8. Sum of odd nos.
+sum=0
+for i in range(1,101,2):
+    sum=sum+i
+print(sum)
+
+9. Multiplication table of a no. 
+n=int(input('enter a no. whose multiplication table is to be printed'))
+for i in range(1,11):
+    p=n*i
+    print(p)
+print()
+
+10. Count digits of a no.
+count=0
+n=int(input('enter a no. '))
+while(n!=0):
+    p=n%10
+    print(p)
+    n=n//10
+    count=count+1
+print(count)
+print()
+
+11. first and last digit of a no.
+n=int(input('enter a no. '))
+last_digit=n%10
+print('LD',last_digit)
+while(n>=10):
+     n=n//10
+print('first_digit',n)
+print()
+
+
+12.Swapping 1st and last digit
+n=int(input('enter a no. '))
+last_digit=n%10
+print('LD',last_digit)
+while(n>=10):
+     n=n//10
+print('first_digit',n)
+last_digit=n+last_digit
+n=last_digit-n
+last_digit=last_digit-n
+print('Swapped first',last_digit,'Swapped last',n)
+
+13. Sum of digits of a no.
+n=int(input('enter a no. '))
+sum=0
+while(n!=0):
+     p=n%10
+     n=n//10
+     sum=sum+p
+print(sum)
+
+14. Product of digits of a no.
+n=int(input('enter a no. '))
+product=1
+while(n!=0):
+     p=n%10
+     n=n//10
+     product=product*p
+print(product)
+
+15. Check Palindrome
+n=int(input('enter a no. '))
+num=n
+reverse=0
+while(n!=0):
+     reverse=reverse*10+n%10
+     n=n//10
+if (num==reverse):
+     print('Palindrom')
+else:
+     print('Not')
+
+16.Digit of a no in words: Doubt
+n=int(input('enter a no. '))
+while(n!=0):
+     p=n%10
+     if(p==1):
+          print('One',end=' ')
+     elif(p==2):
+          print('Two',end=' ')
+     elif(p==3):
+          print('Three',end=' ')
+     elif(p==4):
+          print('Four',end=' ')
+     elif (p == 5):
+          print('Five',end=' ')
+     elif (p == 6):
+          print('Six',end=' ')
+     elif(p==7):
+          print('Seven',end=' ')
+     elif (p == 8):
+          print('Eight',end=' ')
+     elif (p == 9):
+          print('Nine',end=' ')
+     else:
+          print('Zero',end=' ')
+     n=n//10
+
+num=[]
+n=int(input('enter a no. '))
+while(n!=0):
+     p=n%10
+     num.append(p)
+     n=n//10
+for i in range(len(num)-1,-1,-1):
+    p=num[i]
+    if (p == 1):
+        print('One', end=' ')
+    elif (p == 2):
+        print('Two', end=' ')
+    elif (p == 3):
+        print('Three', end=' ')
+    elif (p == 4):
+        print('Four', end=' ')
+    elif (p == 5):
+        print('Five', end=' ')
+    elif (p == 6):
+        print('Six', end=' ')
+    elif (p == 7):
+        print('Seven', end=' ')
+    elif (p == 8):
+        print('Eight', end=' ')
+    elif (p == 9):
+        print('Nine', end=' ')
+    else:
+        print('Zero', end=' ')
+
+17. ASCII values of all the characters
+for i in range(1,256):
+     print('ASCII value of ',chr(i),i)
+
+18. Power of a no.
+base=int(input('Enter the no'))
+power=int(input('Enter the power'))
+for i in range(1,power):
+     power=power*base
+print(power)
+
+19.Factors of a number
+num=int(input('Enter a no. whose factors are to be calculated'))
+for i in range(1,num+1,1):
+     if (num%i==0):
+          print(i)
+print()
+
+20.Factorial of a no.
+num=int(input('Enter a no. whose factorial is to be calculated'))
+p=1
+for i in range(1,num+1,1):
+     p=p*i
+print(p)
+
+21.Check of no. is prime
+num=int(input('Enter a no.'))
+c=0
+for i in range(1,num+1,1):
+     if(num%i==0):
+          c=c+1
+if (c>2):
+     print('Not prime')
+else:
+     print('Prime')
