@@ -1,0 +1,61 @@
+n Python, a dictionary is a collection of key-value pairs. Each key is unique, and each key maps to a value. The value can be anything: a number, a string, a list, or even another dictionary.
+Here’s how you can think of it:
+Key: A unique identifier (like a name or a word).
+Value: The data associated with the key (like a phone number or a definition).
+
+
+Creating a dictionary:
+ages = {
+    "Alice": 25,
+    "Bob": 30,
+    "Charlie": 22
+}
+print(ages)
+
+print(ages["Alice"])
+
+ages["David"] = 28
+ages["Alice"] = 26
+print(ages)
+
+You can remove a key-value pair using the del statement:
+del ages["Bob"]
+
+Examples:
+for name, age in ages.items():
+    print(name, "is", age, "years old")
+
+print(ages.keys())  # Output: dict_keys(['Alice', 'Charlie', 'David'])
+
+print(ages.values())  # Output: dict_values([26, 22, 28])
+
+print(ages.items())  # Output: dict_items([('Alice', 26), ('Charlie', 22), ('David', 28)])
+
+print(ages.get("Alice"))  # Output: 26
+print(ages.get("Eve", "Not Found"))  # Output: Not Found
+
+Create a dictionary called fruits that stores the price of three different fruits: apples, bananas, and cherries. Use the following prices:
+Apples: $2
+Bananas: $1
+Cherries: $3
+fruits={"Apples":"$2",
+	"Bananas":"$1",
+	"Cherries":"$3"}
+print(fruits)
+print(fruits.get("Bananas"))
+fruits["Orange"]="$4"
+fruits["Apples"]="$3"
+print(fruits)
+del fruits["Cherries"]
+print(fruits)
+for fruit,price in fruits.items():
+    print(fruit,price)
+print(fruits.get("Grapes","Not Available"))
+print(len(fruits))
+
+Zip function to combine list or tuples to the dictionary
+keys = ["Red", "Green", "Blue"]
+values = [255, 0, 0]
+paired = zip(keys, values)
+color_dict = dict(paired)
+print(color_dict)
