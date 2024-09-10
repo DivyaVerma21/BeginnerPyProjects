@@ -1,0 +1,45 @@
+Exception handling in Python is a way to manage errors during code execution without stopping the entire program.
+Imagine you're running a program, and something unexpected happens (like dividing by zero or trying to open a file that doesn't exist). 
+Instead of crashing, Python lets you handle these errors gracefully using try, except, and other related keywords.
+
+Here's a simple breakdown:
+Key Parts:
+try: The code you want to test for errors.
+except: If an error occurs in the try block, the except block runs instead of stopping the program.
+finally: Runs no matter what (used for cleanup tasks).
+else: Runs if no exception occurs in the try block.
+
+
+Example
+try:
+    x=int(input('Enter a number'))
+    y=int(input('Enter another number'))
+    z=x/y
+except ZeroDivisionError:
+    print("You can't divide by zero!")  
+
+print("Program continues...")
+
+
+If the user enters the value of y as 0.
+The program doesn't crash. Instead, Python sees the error and jumps to the except block to handle it.
+
+Output:You can't divide by zero!
+Program continues...
+
+You have a list with three items, and you want to access the fourth item. Write a piece of code that handles the potential IndexError and prints an error message.
+
+try:
+	number=[1,2,3]
+	print(number[3])
+except IndexError:
+	print("This index doesn't exist")
+
+Write a code snippet that asks the user for a number and tries to convert it to an integer. Handle the ValueError if the input cannot be converted to an integer and print an error message.
+try:
+	num=int(input('Enter a no.'))
+except ValueError:
+	print('This cannot be converted into integer')
+else:
+	print('Ok converted')
+
